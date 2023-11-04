@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from '../Components/Login'
+import Signup from "../Components/Signup"
 import { Container, Box } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
@@ -19,7 +19,7 @@ export default function SignupPage() {
                     m={"40px 0 15px 0"}
                     borderRadius={"1g"}
                     borderWidth={"1px"} >
-                    <Login />
+                    <Signup/>
                     
                 </Box>
 
