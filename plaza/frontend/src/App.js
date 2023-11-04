@@ -7,10 +7,11 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from './Screens/Login';
+import LoginPage from './Screens/LoginPage.js';
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import SignupPage from './Screens/SignupPage.js';
 
 
 
@@ -18,13 +19,14 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
   return (
     <Router>
-    <div>
-<Routes>
-  <Route exact path="/" element={<Home/>} />
-  <Route exact path="/login" element={<Login/>} />
-  
-</Routes>
-    </div>
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<LoginPage />} />
+          <Route exact path="/signup" element={<SignupPage />} />
+
+        </Routes>
+      </div>
     </Router>
   );
 }
